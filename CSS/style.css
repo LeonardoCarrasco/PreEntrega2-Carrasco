@@ -71,3 +71,15 @@ footer{
 .keyboard-banner{
     max-width: 600px;
 }
+
+.card{
+    max-width: 280px;
+}
+
+.rating{
+    color: #7BC0AB;
+}
+
+.yellow{
+    background-color:#FCE46A;
+}
