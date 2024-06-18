@@ -1,0 +1,73 @@
+*{
+    font-family: "Epilogue", sans-serif;
+    /* padding: 0;
+    margin: 0; */
+}
+
+body{
+    background-color: #F4E0B6 !important;
+}
+
+img{
+    width: 100%;
+}
+
+.rose-submit{
+    background-color: #EC6A89 !important;
+}
+
+
+.logo-container h1{
+    font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.icon{
+    width: 25px;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.border-custom{
+    border: 1px solid #151515;
+}
+
+header{
+    grid-area: header;
+    
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.text-heading{
+    font-size: 2.5rem;
+}
+
+.red-btn{
+    background-color: #FE8372;
+}
+
+
+.keyboard-banner{
+    max-width: 600px;
+}
