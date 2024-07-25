@@ -1,55 +1,42 @@
-/* Estilos formulario */
-.custom-form {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: auto;
+$form-padding: 20px;
+
+.form-container {
+    width: 100%;
+    padding: $form-padding;
 }
 
-.custom-input-group {
-    margin-bottom: 1.5rem;
+.form-group {
+    margin-bottom: 15px;
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #cecece;
+        font-size: 16px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
 }
 
-.custom-input-text {
-    background-color: #FE8372;
-    color: #fff;
+button {
+    width: 100%;
+    padding: 10px;
     border: none;
-    padding: 0.75rem;
-    border-radius: 10px 0 0 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.custom-form-control {
-    border: 1px solid #ccc;
-    border-radius: 0 10px 10px 0;
-    padding: 0.75rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.custom-form-control:focus {
-    border-color: #FE8372;
-    box-shadow: 0 0 5px rgba(254, 131, 114, 0.5);
-}
-
-.custom-btn {
-    background-color: #EC6A89;
-    border: none;
-    padding: 0.75rem 1rem;
-    font-size: 1rem;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.custom-btn:hover {
-    background-color: #d85a75;
-    transform: translateY(-2px);
-}
-
-.custom-btn:active {
-    background-color: #c74d66;
-    transform: translateY(0);
+    font-weight: 600;
+    background-color: $btn-color-rose;
+    color: $font-black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    &:hover {
+        background-color: $sweet-rose;
+    }
 }

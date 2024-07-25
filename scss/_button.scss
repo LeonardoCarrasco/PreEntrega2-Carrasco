@@ -1,0 +1,18 @@
+@mixin btn-personalizado($bg-color:$btn-color-rose, $font-color: $font-color, $border-color: $border-color){
+background-color: $btn-color-rose;
+    color: $font-black;
+    border: 1px solid $border-color;
+    border-radius: 0px;
+    font-weight: 600;
+    padding: 8px;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+    &:hover{
+        background-color: $sweet-rose;
+
+    }
+}
+
+.btn-personalizado{
+    @include btn-personalizado($btn-color-rose, $font-black, $border-color-card)
+}

@@ -7,3 +7,23 @@
     "main main main"
     "footer footer footer";
 }
+
+@keyframes animacion {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @mixin animacion-imagen($duration: 2s, $timing-function: ease-in-out) {
+    animation: animacion $duration $timing-function infinite;
+  }  
+
+.imagen-animada{
+    @include animacion-imagen();
+}

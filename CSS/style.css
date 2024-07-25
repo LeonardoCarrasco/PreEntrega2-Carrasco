@@ -26,8 +26,8 @@ a:hover{
 
 .logo-container h1{
     font-family: "Hammersmith One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .grid-container{
@@ -49,7 +49,7 @@ a:hover{
     height: auto;
 }
 
-.icons:hover:hover{
+.icons:hover{
     transform: scale(1.3);
 }
 

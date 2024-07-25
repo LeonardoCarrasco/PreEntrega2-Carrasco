@@ -1,9 +1,28 @@
-*{
-    font-family: "Epilogue", sans-serif;
-    /* padding: 0;
-    margin: 0; */
-}
+$main-bg-color: #F4E0B6;
+$font-black: #151515;
+$btn-color-rose: #EC6A89;
+$hover-font: #888888;
+$border-color-card:#151515;
+$font-family:"Epilogue", sans-serif;
+$sweet-rose: #f37995;
+
+* {
+    font-family: $font-family;
+  }
 
 body{
     background-color: #F4E0B6 !important;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: $font-black;
+    text-decoration: none;
+    &:hover{
+        color: $hover-font;
+    }
 }

@@ -3,7 +3,79 @@
 @import './navegacion';
 @import './pie';
 @import './form';
+@import './button';
+@import './about';
+@import './products';
+@import './form';
 
-ul{
-    background-color: red;
+.logo-container{
+    h1{
+        font-family: "Hammersmith One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        transition: all 250ms ease;
+        a{
+            text-decoration: none;
+            color: $font-black;
+            font-weight: 500;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.keyboard-banner{
+    img{
+        max-width:600px ;
+    }
+}
+
+main{
+    ul{
+        li{
+            a{
+                img{
+                    max-width: 30px;
+                }
+            }
+        }
+    }
+}
+
+.create-keyboard{
+    img{
+        max-width: 500px;
+    }
+    .keyboard{
+        color: $btn-color-rose
+    }
+    .underline{
+        border-bottom: 4px solid $btn-color-rose;
+    }
+}
+
+

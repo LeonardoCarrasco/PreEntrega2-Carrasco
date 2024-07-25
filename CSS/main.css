@@ -1,11 +1,22 @@
 * {
   font-family: "Epilogue", sans-serif;
-  /* padding: 0;
-  margin: 0; */
 }
 
 body {
   background-color: #F4E0B6 !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #151515;
+  text-decoration: none;
+}
+a:hover {
+  color: #888888;
 }
 
 .grid-container {
@@ -15,64 +26,234 @@ body {
   grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
-/* Estilos formulario */
-.custom-form {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: auto;
+@keyframes animacion {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
-.custom-input-group {
-  margin-bottom: 1.5rem;
-}
-
-.custom-input-text {
-  background-color: #FE8372;
-  color: #fff;
-  border: none;
-  padding: 0.75rem;
-  border-radius: 10px 0 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.custom-form-control {
-  border: 1px solid #ccc;
-  border-radius: 0 10px 10px 0;
-  padding: 0.75rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.custom-form-control:focus {
-  border-color: #FE8372;
-  box-shadow: 0 0 5px rgba(254, 131, 114, 0.5);
-}
-
-.custom-btn {
-  background-color: #EC6A89;
-  border: none;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.custom-btn:hover {
-  background-color: #d85a75;
-  transform: translateY(-2px);
-}
-
-.custom-btn:active {
-  background-color: #c74d66;
-  transform: translateY(0);
+.imagen-animada {
+  animation: animacion 2s ease-in-out infinite;
 }
 
 ul {
-  background-color: red;
+  list-style: none;
+}
+
+.client-side li, nav li, main li {
+  transition: all 150ms ease;
+}
+.client-side li:hover, nav li:hover, main li:hover {
+  transform: scale(1.1);
+}
+
+nav ul li a {
+  color: #151515;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #EC6A89;
+}
+
+.client-side ul li a img {
+  max-width: 24px;
+}
+
+.form-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cecece;
+  font-size: 16px;
+}
+.form-group textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  background-color: #EC6A89;
+  color: #151515;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+button:hover {
+  background-color: #f37995;
+}
+
+.btn-personalizado {
+  background-color: #EC6A89;
+  color: #151515;
+  border: 1px solid #151515;
+  border-radius: 0px;
+  font-weight: 600;
+  padding: 8px;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+}
+.btn-personalizado:hover {
+  background-color: #f37995;
+}
+
+.switches-type {
+  max-width: 500px;
+}
+
+.card-container a {
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+.card-container a:hover {
+  transform: scale(1.02);
+}
+
+.rating {
+  color: #7BC0AB;
+}
+
+.card {
+  max-width: 280px;
+}
+.card .img-container {
+  background-color: #EC6A89;
+}
+.card .price {
+  background-color: #FCE46A;
+  border: 1px solid #151515;
+}
+
+.image-principal {
+  background-color: #FCFCFC;
+  padding: 120px 80px;
+  text-align: center;
+}
+.image-principal img {
+  max-width: 400px;
+}
+
+.side-img a {
+  transition: all 25ms ease;
+}
+.side-img a div {
+  background-color: #FCFCFC;
+}
+.side-img a:hover {
+  transform: scale(1.05);
+}
+
+.animate {
+  animation: animacion 2s ease-in-out infinite;
+}
+
+.form-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cecece;
+  font-size: 16px;
+}
+.form-group textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  background-color: #EC6A89;
+  color: #151515;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+button:hover {
+  background-color: #f37995;
+}
+
+.logo-container h1 {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 250ms ease;
+}
+.logo-container h1 a {
+  text-decoration: none;
+  color: #151515;
+  font-weight: 500;
+}
+.logo-container h1:hover {
+  transform: scale(1.1);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.keyboard-banner img {
+  max-width: 600px;
+}
+
+main ul li a img {
+  max-width: 30px;
+}
+
+.create-keyboard img {
+  max-width: 500px;
+}
+.create-keyboard .keyboard {
+  color: #EC6A89;
+}
+.create-keyboard .underline {
+  border-bottom: 4px solid #EC6A89;
 }
 
 /*# sourceMappingURL=main.css.map */
